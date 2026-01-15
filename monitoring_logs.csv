@@ -1,0 +1,3 @@
+timestamp,model_version,model_type,input_summary,prediction,latency_ms,feedback_score,feedback_text
+2026-01-14T15:11:55.083726,v1,baseline,"Amount=100, Quantity=1, Category=Electronics, Sub-Category=Electronic Games, Payment=COD",12.793776877823985,22.725820541381836,4,
+2026-01-14T15:11:55.092858,v2,improved,"Amount=100, Quantity=1, Category=Electronics, Sub-Category=Electronic Games, Payment=COD",-15.971775350763558,22.725820541381836,4,
