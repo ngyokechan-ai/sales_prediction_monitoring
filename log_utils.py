@@ -2,6 +2,7 @@
 import os
 from datetime import datetime
 import pandas as pd
+import csv  # for quoting
 
 # Always write logs next to this file
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -41,6 +42,6 @@ def log_prediction(
     df_new = pd.DataFrame([row])
 
     if not os.path.exists(LOG_PATH):
-        df_new.to_csv(LOG_PATH, index=False)
+        df_new.to_csv(LOG_PATH, index=False, quoting=csv.QUOTE_ALL)
     else:
-        df_new.to_csv(LOG_PATH, mode="a", header=False, index=False)
+        df_new.to_csv(LOG_PATH, mode="a", header=False, index=False, quoting=csv.QUOTE_ALL)
