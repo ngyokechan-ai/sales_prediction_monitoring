@@ -16,7 +16,9 @@ def log_prediction(
     latency_ms,
     feedback_score,
     feedback_text,
-    r2=None,
+    train_r2=None, 
+    test_r2=None, 
+    cv_r2=None
 ):
     """
     Append a single prediction event to monitoring_logs.csv.
@@ -31,7 +33,9 @@ def log_prediction(
     "latency_ms": float(latency_ms) if latency_ms is not None else None,
     "feedback_score": int(feedback_score) if feedback_score is not None else None,
     "feedback_text": feedback_text or "",
-    "r2": float(r2) if r2 is not None else None,  # <-- change here
+    "train_r2": float(train_r2) if train_r2 is not None else None,
+    "test_r2": float(test_r2) if test_r2 is not None else None,
+    "cv_r2": float(cv_r2) if cv_r2 is not None else None,
     }
 
     df_new = pd.DataFrame([row])
