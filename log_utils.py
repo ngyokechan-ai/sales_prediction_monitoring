@@ -23,7 +23,7 @@ def log_prediction(
     Creates the file with header if it does not exist yet.
     """
     row = {
-    "timestamp": datetime.utcnow().isoformat(),
+     "timestamp": datetime.utcnow().isoformat(),
     "model_version": model_version,
     "model_type": model_type,
     "input_summary": input_summary,
@@ -31,7 +31,7 @@ def log_prediction(
     "latency_ms": float(latency_ms) if latency_ms is not None else None,
     "feedback_score": int(feedback_score) if feedback_score is not None else None,
     "feedback_text": feedback_text or "",
-    "r2_value": float(r2_value) if r2_value is not None else None,  # <-- change here
+    "r2": float(r2_value) if r2_value is not None else None,  # <-- change here
     }
 
     df_new = pd.DataFrame([row])
