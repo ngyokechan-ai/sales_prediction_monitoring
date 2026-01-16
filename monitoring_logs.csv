@@ -1,3 +1,2 @@
-timestamp,model_version,model_type,input_summary,prediction,latency_ms,feedback_score,feedback_text
-2026-01-14T15:11:55.083726,v1,baseline,"Amount=100, Quantity=1, Category=Electronics, Sub-Category=Electronic Games, Payment=COD",12.793776877823985,22.725820541381836,4,
-2026-01-14T15:11:55.092858,v2,improved,"Amount=100, Quantity=1, Category=Electronics, Sub-Category=Electronic Games, Payment=COD",-15.971775350763558,22.725820541381836,4,
+2026-01-16T16:45:58.076882,v1,baseline,"Amount=9733, Quantity=3435, Category=Electronics",-10294.401745973582,48.08855056762695,4,,0.09,0.114,0.03
+2026-01-16T16:45:58.082545,v2,improved,"Amount=9733, Quantity=3435, Category=Electronics",140.00604945463036,48.08855056762695,4,,0.361,0.167,0.047

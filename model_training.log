@@ -1,0 +1,15 @@
+2026-01-17 00:40:41,180 - INFO - Starting training for Model V1
+2026-01-17 00:40:41,183 - INFO - Dataset loaded with shape (1500, 7)
+2026-01-17 00:40:41,184 - INFO - Features used: ['Amount', 'Quantity']
+2026-01-17 00:40:41,185 - INFO - Train set: (1200, 2), Test set: (300, 2)
+2026-01-17 00:40:41,186 - INFO - Model V1 trained successfully.
+2026-01-17 00:40:41,197 - INFO - V1 Training R2: 0.090
+2026-01-17 00:40:41,197 - INFO - V1 Testing R2: 0.114
+2026-01-17 00:40:41,198 - INFO - V1 CV R2: 0.030
+2026-01-17 00:40:41,200 - INFO - Model V1 saved as model_v1.pkl
+2026-01-17 00:40:45,737 - INFO - Starting training for Model V2
+2026-01-17 00:40:45,895 - INFO - Model V2 trained successfully.
+2026-01-17 00:40:46,833 - INFO - V2 Training R2: 0.361
+2026-01-17 00:40:46,833 - INFO - V2 Testing R2: 0.167
+2026-01-17 00:40:46,833 - INFO - V2 CV R2: 0.047
+2026-01-17 00:40:46,864 - INFO - Model V2 saved as model_v2.pkl
