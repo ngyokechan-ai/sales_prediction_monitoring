@@ -16,7 +16,7 @@ def log_prediction(
     latency_ms,
     feedback_score,
     feedback_text,
-    r2_value=None,
+    r2=None,
 ):
     """
     Append a single prediction event to monitoring_logs.csv.
