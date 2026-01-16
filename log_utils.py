@@ -31,7 +31,7 @@ def log_prediction(
     "latency_ms": float(latency_ms) if latency_ms is not None else None,
     "feedback_score": int(feedback_score) if feedback_score is not None else None,
     "feedback_text": feedback_text or "",
-    "r2": float(r2_value) if r2_value is not None else None,  # <-- change here
+    "r2": float(r2) if r2 is not None else None,  # <-- change here
     }
 
     df_new = pd.DataFrame([row])
