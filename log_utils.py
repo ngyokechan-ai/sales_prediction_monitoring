@@ -1,7 +1,6 @@
 # log_utils.py
 import os
 from datetime import datetime
-
 import pandas as pd
 
 # Always write logs next to this file
@@ -17,6 +16,7 @@ def log_prediction(
     latency_ms,
     feedback_score,
     feedback_text,
+    r2_value=None,
 ):
     """
     Append a single prediction event to monitoring_logs.csv.
@@ -31,6 +31,7 @@ def log_prediction(
         "latency_ms": float(latency_ms) if latency_ms is not None else None,
         "feedback_score": int(feedback_score) if feedback_score is not None else None,
         "feedback_text": feedback_text or "",
+        "r2": float(r2_value) if r2_value is not None else None,
     }
 
     df_new = pd.DataFrame([row])
