@@ -1,7 +1,6 @@
 # log_utils.py
 import os
 from datetime import datetime
-
 import pandas as pd
 
 # Always write logs next to this file
@@ -25,6 +24,7 @@ def log_prediction(
     Append a single prediction event to monitoring_logs.csv.
     Creates the file with header if it does not exist yet.
     """
+
     row = {
         "timestamp": datetime.utcnow().isoformat(),
         "model_version": model_version,

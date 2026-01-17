@@ -23,7 +23,7 @@ def load_logs():
         return pd.DataFrame(columns=cols)
 
     try:
-        df = pd.read_csv(LOG_PATH, header=None, names=cols, dtype=str)
+        df = pd.read_csv(LOG_PATH)
     except pd.errors.EmptyDataError:
         return pd.DataFrame(columns=cols)
     
