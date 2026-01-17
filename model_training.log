@@ -1,16 +1,17 @@
-2026-01-17 15:09:11,032 - INFO - Starting training for Model V1
-2026-01-17 15:09:11,035 - INFO - Dataset loaded with shape (1500, 7)
-2026-01-17 15:09:11,036 - INFO - Features used: ['Amount', 'Quantity']
-2026-01-17 15:09:11,037 - INFO - Train set: (1200, 2), Test set: (300, 2)
-2026-01-17 15:09:11,039 - INFO - Model V1 trained successfully.
-2026-01-17 15:09:11,051 - INFO - V1 Training R2: 0.090
-2026-01-17 15:09:11,051 - INFO - V1 Testing R2: 0.114
-2026-01-17 15:09:11,051 - INFO - V1 CV R2: 0.030
-2026-01-17 15:09:11,054 - INFO - Model V1 saved as model_v1.pkl
-2026-01-17 15:09:14,669 - INFO - Starting training for Model V2
-2026-01-17 15:09:14,678 - INFO - Train set: (1200, 3), Test set: (300, 3)
-2026-01-17 15:09:14,840 - INFO - Model V2 trained successfully.
-2026-01-17 15:09:15,794 - INFO - V2 Training R2: 0.361
-2026-01-17 15:09:15,794 - INFO - V2 Testing R2: 0.167
-2026-01-17 15:09:15,794 - INFO - V2 CV R2: 0.047
-2026-01-17 15:09:15,825 - INFO - Model V2 saved as model_v2.pkl
+2026-01-17 15:47:24,022 - INFO - Starting training for Model V1
+2026-01-17 15:47:24,026 - INFO - Dataset loaded with shape (1500, 7)
+2026-01-17 15:47:24,026 - INFO - Features used: ['Amount', 'Quantity']
+2026-01-17 15:47:24,027 - INFO - Train set: (1200, 2), Test set: (300, 2)
+2026-01-17 15:47:24,032 - INFO - Model V1 trained successfully.
+2026-01-17 15:47:24,044 - INFO - V1 Training R2: 0.090
+2026-01-17 15:47:24,044 - INFO - V1 Testing R2: 0.114
+2026-01-17 15:47:24,044 - INFO - V1 CV R2: 0.030
+2026-01-17 15:47:24,047 - INFO - Model V1 saved as model_v1.pkl
+2026-01-17 15:47:29,203 - INFO - Starting training for Model V2
+2026-01-17 15:47:29,209 - INFO - Features used: ['Amount', 'Quantity', 'Category']
+2026-01-17 15:47:29,210 - INFO - Train set: (1200, 3), Test set: (300, 3)
+2026-01-17 15:47:29,363 - INFO - Model V2 trained successfully.
+2026-01-17 15:47:30,299 - INFO - V2 Training R2: 0.361
+2026-01-17 15:47:30,299 - INFO - V2 Testing R2: 0.167
+2026-01-17 15:47:30,299 - INFO - V2 CV R2: 0.047
+2026-01-17 15:47:30,329 - INFO - Model V2 saved as model_v2.pkl

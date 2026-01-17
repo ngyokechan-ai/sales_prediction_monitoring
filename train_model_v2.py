@@ -41,6 +41,9 @@ y = df["Profit"]
 cat_cols = [col for col in X.columns if X[col].dtype == "object"]
 X[cat_cols] = X[cat_cols].astype(str)
 
+# Log features used
+logging.info(f"Features used: {X.columns.tolist()}")
+
 # -----------------------------
 # Preprocessing: one-hot encode categorical columns
 # -----------------------------
